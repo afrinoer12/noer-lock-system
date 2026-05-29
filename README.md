@@ -1,59 +1,389 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+<div align="center">
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:38BDF8,50:8B5CF6,100:22C55E&height=220&section=header&text=Noer%20Lock%20System&fontSize=45&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Smart%20Door%20Lock%20Monitoring%20Dashboard&descAlignY=58&descSize=17" />
 
-## About Laravel
+<br>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<img src="https://readme-typing-svg.herokuapp.com?font=Poppins&weight=700&size=26&duration=3000&pause=800&color=38BDF8&center=true&vCenter=true&width=700&lines=Laravel+Smart+Door+Lock+System;Fingerprint+Access+Monitoring;IoT+Dashboard+with+Modern+UI;Secure+Door+Control+System" />
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<br><br>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![Laravel](https://img.shields.io/badge/Laravel-12.x-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
+![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?style=for-the-badge&logo=php&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-Database-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![IoT](https://img.shields.io/badge/IoT-Smart%20Door-22C55E?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Development-38BDF8?style=for-the-badge)
 
-## Learning Laravel
+</div>
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+---
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+# 🔐 Noer Lock System
 
-## Laravel Sponsors
+**Noer Lock System** adalah aplikasi web berbasis **Laravel** untuk monitoring dan kontrol akses **Smart Door Lock** menggunakan fingerprint.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Project ini dirancang untuk membantu admin memantau status pintu, mengelola data fingerprint, melihat riwayat akses, serta mengontrol pintu secara manual melalui dashboard web.
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+## ✨ Preview Concept
 
-## Contributing
+<div align="center">
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+<img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&fit=crop&w=1200&q=80" width="90%" style="border-radius:20px;" />
 
-## Code of Conduct
+</div>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+---
 
-## Security Vulnerabilities
+## 🚀 Fitur Utama
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+✅ Dashboard monitoring smart door lock  
+✅ Status pintu: terkunci / terbuka  
+✅ Kontrol pintu manual dari web  
+✅ Data pengguna fingerprint  
+✅ Tambah dan hapus data fingerprint  
+✅ Riwayat akses berhasil dan ditolak  
+✅ Sistem berbasis Laravel  
+✅ Database MySQL  
+✅ Desain dark mode modern  
+✅ Responsive untuk laptop dan HP  
+✅ Siap dikembangkan untuk integrasi ESP32 / Arduino  
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## 🧠 Konsep Sistem
+
+```text
+Sensor Fingerprint
+        ↓
+ESP32 / Arduino
+        ↓
+API Laravel
+        ↓
+Database MySQL
+        ↓
+Dashboard Web Admin
+        ↓
+Solenoid Door Lock
+```
+
+---
+
+## 🛠️ Teknologi yang Digunakan
+
+| Teknologi | Fungsi |
+|---|---|
+| Laravel | Framework backend |
+| PHP | Bahasa pemrograman utama |
+| MySQL | Database |
+| Blade | Template tampilan |
+| HTML | Struktur halaman |
+| CSS | Desain dashboard |
+| JavaScript | Interaksi halaman |
+| ESP32 / Arduino | Mikrokontroler IoT |
+| Fingerprint Sensor | Sistem autentikasi akses |
+| Solenoid Door Lock | Pengunci pintu otomatis |
+
+---
+
+## 📌 Fitur Dashboard
+
+| Fitur | Keterangan |
+|---|---|
+| Status Pintu | Menampilkan pintu sedang terkunci atau terbuka |
+| Total Fingerprint | Menampilkan jumlah pengguna fingerprint |
+| Akses Berhasil | Menghitung akses yang diterima |
+| Akses Ditolak | Menghitung akses yang ditolak |
+| Kontrol Pintu | Tombol buka dan kunci pintu |
+| Riwayat Akses | Menampilkan aktivitas akses terbaru |
+
+---
+
+## 📁 Struktur Project
+
+```bash
+noer-lock-system/
+│
+├── app/
+│   ├── Http/
+│   │   └── Controllers/
+│   │       ├── DashboardController.php
+│   │       ├── DoorController.php
+│   │       └── FingerprintUserController.php
+│   │
+│   └── Models/
+│       ├── DoorStatus.php
+│       ├── FingerprintUser.php
+│       └── AccessLog.php
+│
+├── database/
+│   └── migrations/
+│
+├── resources/
+│   └── views/
+│       ├── dashboard.blade.php
+│       └── fingerprint/
+│           └── index.blade.php
+│
+├── routes/
+│   └── web.php
+│
+├── public/
+├── .env.example
+├── artisan
+├── composer.json
+└── README.md
+```
+
+---
+
+## ⚙️ Cara Install Project
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/afrinoer12/noer-lock-system.git
+```
+
+### 2. Masuk ke Folder Project
+
+```bash
+cd noer-lock-system
+```
+
+### 3. Install Dependency Laravel
+
+```bash
+composer install
+```
+
+### 4. Copy File Environment
+
+```bash
+copy .env.example .env
+```
+
+### 5. Generate Application Key
+
+```bash
+php artisan key:generate
+```
+
+---
+
+## 🗄️ Setup Database
+
+Buat database baru di phpMyAdmin:
+
+```text
+noer_lock_system
+```
+
+Lalu ubah file `.env`:
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=noer_lock_system
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+Jalankan migration:
+
+```bash
+php artisan migrate:fresh
+```
+
+---
+
+## ▶️ Menjalankan Project
+
+```bash
+php artisan serve
+```
+
+Buka browser:
+
+```text
+http://127.0.0.1:8000
+```
+
+Atau langsung ke dashboard:
+
+```text
+http://127.0.0.1:8000/dashboard
+```
+
+---
+
+## 🔐 Data Fingerprint
+
+Halaman data fingerprint digunakan untuk mengelola pengguna yang memiliki akses ke pintu.
+
+Data yang disimpan:
+
+```text
+ID Fingerprint
+Nama Pengguna
+Role
+Status Aktif / Nonaktif
+```
+
+Contoh:
+
+```text
+ID Fingerprint : 1
+Nama           : Afrizal Noer
+Role           : Admin
+Status         : Active
+```
+
+---
+
+## 📊 Riwayat Akses
+
+Setiap aktivitas akses akan disimpan ke database.
+
+Data yang dicatat:
+
+```text
+Nama Pengguna
+ID Fingerprint
+Status Akses
+Keterangan
+Waktu Akses
+```
+
+Status akses:
+
+```text
+success = akses diterima
+denied  = akses ditolak
+```
+
+---
+
+## 🔌 Rencana Integrasi IoT
+
+Project ini dapat dikembangkan dengan perangkat:
+
+| Komponen | Fungsi |
+|---|---|
+| ESP32 | Mikrokontroler utama |
+| Fingerprint Sensor | Membaca sidik jari |
+| Solenoid Door Lock | Membuka dan mengunci pintu |
+| Relay | Mengontrol solenoid |
+| Buzzer | Notifikasi suara |
+| LCD | Menampilkan status sistem |
+| Push Button | Tombol manual |
+
+---
+
+## 🌐 API Rencana ESP32
+
+Contoh endpoint yang akan digunakan ESP32:
+
+```text
+POST /api/access
+GET  /api/door/status
+POST /api/door/update
+```
+
+Contoh request fingerprint:
+
+```json
+{
+  "fingerprint_id": 1
+}
+```
+
+Contoh response akses diterima:
+
+```json
+{
+  "access": true,
+  "message": "Akses diterima",
+  "name": "Afrizal Noer"
+}
+```
+
+---
+
+## 🎨 Konsep Desain
+
+Project ini menggunakan konsep **modern IoT dashboard** dengan tema:
+
+```text
+Dark Mode
+Neon Blue
+Glassmorphism Card
+Smart Security Style
+Responsive Layout
+```
+
+Warna utama:
+
+| Warna | Kode |
+|---|---|
+| Dark Navy | `#020617` |
+| Card Dark | `#0F172A` |
+| Blue Neon | `#38BDF8` |
+| Green Success | `#22C55E` |
+| Red Danger | `#EF4444` |
+| Purple Accent | `#8B5CF6` |
+
+---
+
+## 📌 Tujuan Project
+
+Project ini dibuat untuk:
+
+- Membuat sistem monitoring pintu pintar
+- Mengelola akses pengguna fingerprint
+- Mencatat riwayat akses pintu
+- Membantu admin memantau status pintu
+- Menjadi dasar integrasi Laravel dengan IoT
+- Menjadi project portfolio Laravel dan IoT
+
+---
+
+## 🧩 Status Pengembangan
+
+| Modul | Status |
+|---|---|
+| Setup Laravel | ✅ Selesai |
+| Database MySQL | ✅ Selesai |
+| Dashboard | ✅ Selesai |
+| Kontrol Pintu Web | ✅ Selesai |
+| Data Fingerprint | ✅ Selesai |
+| Riwayat Akses | 🔄 Pengembangan |
+| API ESP32 | 🔄 Pengembangan |
+| Integrasi Sensor | 🔄 Pengembangan |
+
+---
+
+## 👨‍💻 Developer
+
+<div align="center">
+
+### Afrizal Noer
+
+[![GitHub](https://img.shields.io/badge/GitHub-afrinoer12-181717?style=for-the-badge&logo=github)](https://github.com/afrinoer12)
+[![Email](https://img.shields.io/badge/Email-afrinoer12%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:afrinoer12@gmail.com)
+
+</div>
+
+---
+
+## ⭐ Support Project
+
+Kalau project ini bermanfaat, jangan lupa beri bintang di repository ini.
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:38BDF8,50:8B5CF6,100:22C55E&height=120&section=footer" />
+
+</div>
